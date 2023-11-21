@@ -1,3 +1,10 @@
+import { Outlet } from "react-router-dom";
+import { Movie } from "../../components/Movie";
+
 export const MovieDetailesPage: React.FC = () => {
-  return <div>MovieDetailesPage</div>;
+  return (
+    <Movie>
+      <Outlet />
+    </Movie>
+  );
 };
